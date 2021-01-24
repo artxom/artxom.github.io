@@ -1,7 +1,7 @@
 【第二章】在单一表格中检索数据
 ===========
 ### 1. 选择语句
-<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008107&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008107&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ##### 导航
 
@@ -24,7 +24,7 @@ ORDER BY first_name  -- 排序
 </p>
 ```
 ### 2. 选择子句
-<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008125&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008125&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ##### 小结
 SELECT 是列/字段选择语句，可选择列，列间数学表达式，特定值或文本，可用AS关键字设置列别名（AS可省略），注意 DISTINCT 关键字的使用。
