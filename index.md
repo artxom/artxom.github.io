@@ -103,7 +103,7 @@ where order_date > '2019-01-01'
 
 ```
 ### 4. AND, OR, NOT运算符
-<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no" > </iframe> 
 
 ##### 小结
 用逻辑运算符AND、OR、NOT对（数学和）比较运算进行组合实现多重条件筛选
