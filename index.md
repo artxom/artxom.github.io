@@ -1,7 +1,7 @@
 
 【第二章】在单张表中检索数据
 ===========
-## 1. 查询语句
+# 1. 查询语句
 <iframe height="450" width="800" src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008107&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 导航
@@ -24,7 +24,7 @@ ORDER BY first_name  -- 排序
 */
 
 ```
-## 2. 查询子句
+# 2. 查询子句
 <iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008125&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 小结
@@ -49,7 +49,7 @@ FROM customers
 
 ```
 
-## 练习
+### 练习
 单价涨价10%作为新单价
 
 ```sql
@@ -63,7 +63,7 @@ FROM products
 ```
 如上面这个例子所示，取别名时，AS 可省，空格后跟别名就行，可看作是SQL会将将列变量及其数学运算之后的第一个空格识别为AS
 
-## 3. WHERE子句
+# 3. WHERE子句
 <iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131403&page=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 小结
@@ -103,7 +103,7 @@ where order_date > '2019-01-01'
 -- 有更一般的方法，不用每年改代码，之后教
 
 ```
-## 4. AND, OR, NOT运算符
+# 4. AND, OR, NOT运算符
 <iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no"  framespacing="0" allowfullscreen="true" > </iframe> 
 
 ### 小结
