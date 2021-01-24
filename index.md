@@ -102,3 +102,78 @@ where order_date > '2019-01-01'
 -- 有更一般的方法，不用每年改代码，之后教
 
 ```
+### 4. AND, OR, NOT运算符
+<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+
+##### 小结
+用逻辑运算符AND、OR、NOT对（数学和）比较运算进行组合实现多重条件筛选
+执行优先级：数学→比较→逻辑
+
+##### 实例
+```sql
+USE sql_store;
+
+SELECT *
+FROM customers
+WHERE birth_date > '1990-01-01' AND points > 1000
+/WHERE birth_date > '1990-01-01' OR 
+      points > 1000 AND state = 'VA'
+```
+AND优先级高于OR，但最好加括号，更清晰
+```sql
+WHERE birth_date > '1990-01-01' OR 
+      (points > 1000 AND state = 'VA')
+```
+NOT的用法
+```sql
+WHERE NOT (birth_date > '1990-01-01' OR points > 1000)
+```
+去括号等效转化为
+```sql
+WHERE birth_date <= '1990-01-01' AND points <= 1000
+```
+##### 练习
+订单6中总价大于30的商品
+```sql
+USE sql_store;
+
+SELECT * FROM order_items
+WHERE order_id = 6 AND quantity * unit_price > 30
+```
+注意优先级：数学→比较→逻辑
+SELECT 子句，WHERE 子句以及后面的 ORDER BY 子句等都能用列间数学表达式
+### 5. IN运算符
+<iframe src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131459&page=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+
+##### 小结
+用IN运算符将某一属性与多个值（一系列值）进行比较
+实质是多重相等比较运算条件的简化
+
+##### 案例
+选出'va'、'fl'、'ga'三个州的顾客
+```sql
+USE sql_store;
+
+SELECT * FROM customers
+WHERE state = 'va' OR state = 'fl' OR state = 'ga'
+```
+不能 state = 'va' OR 'fl' OR 'ga' 因为数学和比较运算优先于逻辑运算，加括号 state = ('va' OR 'fl' OR 'ga') 也不行，逻辑运算符只能链接布林值。
+
+用 IN 操作符简化该条件
+```sql 
+WHERE state IN ('va', 'fl', 'ga')
+```
+可加NOT
+```sql
+WHERE state NOT IN ('va', 'fl', 'ga')
+```
+这里可用NOT的原因：可以这么看，IN语句 IN ('va', 'fl', 'ga') 是在进行一种是否符合条件的判断，可看作是一种特殊的比较运算，得到的是一个逻辑值，故可用NOT进行取反
+##### 练习
+库存量刚好为49、38或72的产品
+```sql
+USE sql_store;
+
+select * from products
+where quantity_in_stock in (49, 38, 72)
+```
+
