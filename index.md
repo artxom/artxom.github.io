@@ -2,7 +2,7 @@
 【第二章】在单张表中检索数据
 ===========
 ## 1. 查询语句
-<iframe height="800" width="1200" src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008107&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<iframe height="450" width="800" src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008107&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 导航
 
@@ -25,7 +25,7 @@ ORDER BY first_name  -- 排序
 
 ```
 ## 2. 查询子句
-<iframe height="800" width="1200"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008125&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83008125&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 小结
 SELECT 是列/字段查询语句，可查询列，列间数学表达式，特定值或文本，可用AS关键字设置列别名（AS可省略），注意 DISTINCT 关键字的使用。
@@ -64,7 +64,7 @@ FROM products
 如上面这个例子所示，取别名时，AS 可省，空格后跟别名就行，可看作是SQL会将将列变量及其数学运算之后的第一个空格识别为AS
 
 ## 3. WHERE子句
-<iframe height="800" width="1200"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131403&page=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131403&page=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 小结
 WHERE 是行筛选条件，实际是一行一行/一条条记录依次验证是否符合条件，进行筛选
@@ -104,7 +104,7 @@ where order_date > '2019-01-01'
 
 ```
 ## 4. AND, OR, NOT运算符
-<iframe height="800" width="1200"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no"  framespacing="0" allowfullscreen="true" > </iframe> 
+<iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131430&page=8" scrolling="no" border="0" frameborder="no"  framespacing="0" allowfullscreen="true" > </iframe> 
 
 ### 小结
 用逻辑运算符AND、OR、NOT对（数学和）比较运算进行组合实现多重条件筛选
@@ -144,7 +144,7 @@ WHERE order_id = 6 AND quantity * unit_price > 30
 注意优先级：数学→比较→逻辑
 SELECT 子句，WHERE 子句以及后面的 ORDER BY 子句等都能用列间数学表达式
 ## 5. IN运算符
-<iframe height="800" width="1200"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131459&page=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<iframe height="450" width="800"  src="//player.bilibili.com/player.html?aid=47123168&bvid=BV1Xb41177na&cid=83131459&page=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
 ### 小结
 用IN运算符将某一属性与多个值（一系列值）进行比较
